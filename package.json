@@ -1,5 +1,5 @@
 {
-  "name": "@sagarvadn/failback",
+  "name": "failback",
   "version": "1.0.1",
   "description": "A Dynamic Content Fallback Manager",
   "main": "index.js",
@@ -29,9 +29,6 @@
     "react",
     "nextjs"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@sagarvadn"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/sagarvadn/failback.git"

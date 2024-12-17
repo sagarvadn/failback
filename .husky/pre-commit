@@ -1,3 +1,2 @@
 npm test
-#npx commitlint --edit $1
-#npx lint-staged
+npx lint-staged
