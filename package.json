@@ -1,5 +1,5 @@
 {
-  "name": "failback",
+  "name": "@sagarvadn/failback",
   "version": "1.0.1",
   "description": "A Dynamic Content Fallback Manager",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test": "jest --coverage",
     "lint": "eslint 'src/**/*.{ts,tsx,js,jsx}'",
     "format": "prettier --write 'src/**/*.{ts,tsx,js,jsx,json,md}'",
-    "prepare": "husky install",
+    "prepare": "husky",
     "start": "node dist/index.js"
   },
   "husky": {
