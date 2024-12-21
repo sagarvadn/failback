@@ -88,6 +88,33 @@ cacheManager.clear("customKey");
 cacheManager.clearAll();
 ```
 
+## API Reference
+### fetchWithCache
+Fetches data with caching and fallback support.
+
+|Parameter | Type |	Description |
+|-------|-------|-------|
+|`key`|	`string` |Unique key for caching data.|
+|`fetcher`|	`() => Promise<T>`|	Function to fetch data from an API.|
+|`options` |	`FetchOptions<T>`	| Configuration options for caching. |
+
+#### Options
+|Property|	Type|	Description|
+|-------|-------|-------|
+|`cacheTime`|	`number` |	Cache duration in milliseconds.|
+|`fallback`|	`T`|	Fallback content if fetch fails.|
+
+### cacheManager
+Manages cached data.
+
+|Method|	Parameters|	Description|
+|-------|-------|-------|
+|`set`|	`key: string, data: T, ttl: number`|	Stores data in cache with a time-to-live.|
+|`get`|	`key: string`|	Retrieves data from the cache.|
+|`clear`|	`key: string`|	Clears data for a specific key.|
+|`clearAll`|	None|	Clears all cached data.|
+
+
 ## Contributing
 
 Please feel free to contribute:
